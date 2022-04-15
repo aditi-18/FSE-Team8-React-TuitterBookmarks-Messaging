@@ -1,6 +1,6 @@
 import React from "react";
 
-const TuitStats = ({tuit, dislikeTuit, likeTuit = () => {}}) => {
+const TuitStats = ({tuit, dislikeTuit, likeTuit, bookmarkTuit = () => {}}) => {
   
     return (
       <div className="row mt-2">
@@ -38,6 +38,20 @@ const TuitStats = ({tuit, dislikeTuit, likeTuit = () => {}}) => {
             {tuit.stats && tuit.stats.dislikes}
           </span>
         </div>
+
+        <div className="col">
+         <span onClick={() => bookmarkTuit(tuit)}>
+            {
+                tuit.stats && tuit.stats.bookmarks == 1  &&
+                <i className="fas fa-bookmark me-1" style={{color: 'blue'}}></i>
+            }
+            {
+                tuit.stats && tuit.stats.bookmarks == 0 &&
+                <i className="far fa-bookmark me-1"></i>
+            }
+         </span>
+        </div>
+
         <div className="col">
           <i className="far fa-inbox-out"></i>
         </div>
