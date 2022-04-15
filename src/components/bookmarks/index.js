@@ -1,12 +1,19 @@
-import React from "react";
 import Tuits from "../tuits";
+import * as service from "../../services/bookmarks-service";
+import {useEffect, useState} from "react";
 
-function Bookmarks () {
-  return(
-    <div>
-        <h1>Bookmarks Screen</h1>
-      {/*<Tuits/>*/}
-    </div>
-  );
-}
-export default Bookmarks;
+const MyBookmarks = () => {
+    const [bookmarkedTuits, setbookmarkedTuits] = useState([]);
+    const findTuitsIBookmarked = () =>
+        service.findAllTuitsThatBookmarkedByAUser("me")
+            .then((tuits) => setbookmarkedTuits(tuits));
+    useEffect(findTuitsIBookmarked, []);
+
+    return(
+        <div>
+            <h1>My Bookmarks</h1>
+            <Tuits tuits={bookmarkedTuits} refreshTuits={findTuitsIBookmarked}/>
+        </div>
+    );
+};
+export default MyBookmarks;
