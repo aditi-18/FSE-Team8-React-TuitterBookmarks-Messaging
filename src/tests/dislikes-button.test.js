@@ -1,3 +1,4 @@
+/* eslint-disable testing-library/no-unnecessary-act */
 import TuitStats from "../components/tuits/tuit-stats";
 import { act } from 'react-dom/test-utils';
 import {screen, render, fireEvent} from "@testing-library/react";

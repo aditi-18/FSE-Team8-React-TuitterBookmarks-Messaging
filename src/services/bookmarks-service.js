@@ -1,7 +1,8 @@
 import axios from "axios";
 const BASE_URL = "http://localhost:4000";
 
-//const BASE_URL = "https://cs5500-ass4.herokuapp.com"const USERS_API = `${BASE_URL}/api/users`;
+//const BASE_URL = "https://cs5500-ass4.herokuapp.com"
+const USERS_API = `${BASE_URL}/api/users`;
 const TUITS_API = `${BASE_URL}/api/tuits`;
 
 const api = axios.create({

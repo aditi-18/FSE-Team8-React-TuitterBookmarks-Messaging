@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import React from "react";
 
 const TuitStats = ({tuit, dislikeTuit, likeTuit, bookmarkTuit = () => {}}) => {
@@ -40,7 +41,7 @@ const TuitStats = ({tuit, dislikeTuit, likeTuit, bookmarkTuit = () => {}}) => {
         </div>
 
         <div className="col">
-         <span onClick={() => bookmarkTuit(tuit)}>
+         <span onClick={() => bookmarkTuit(tuit)} data-testid ="test-bookmarkButton">
             {
                 tuit.stats && tuit.stats.bookmarks == 1  &&
                 <i className="fas fa-bookmark me-1" style={{color: 'blue'}}></i>

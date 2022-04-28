@@ -1,6 +1,5 @@
 import axios from "axios";
-const BASE_URL = "https://cs5500-ass4.herokuapp.com";
-//"http://localhost:4000";
+const BASE_URL = "http://localhost:4000";
 //const BASE_URL = process.env.REACT_APP_BASE_URL;
 const USERS_API = `${BASE_URL}/api/users`;
 
