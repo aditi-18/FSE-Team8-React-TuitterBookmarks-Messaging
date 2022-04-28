@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Team8-React-TuitterBookmarks-Messaging
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Links to GitHub Repository
 
-## Available Scripts
+1) Frontend - https://github.com/aditi-18/FSE-Team8-React-TuitterBookmarks-Messaging
+2) Backend - https://github.com/aditi-18/FSE-Team8-Node-TuitterBookmarks-Messaging
 
-In the project directory, you can run:
+## Problem Statement
 
-### `npm start`
+In terms of functionality, Tuiter is currently limited. We need a set of features to boost engagement and make the app
+interesting to use in order to gain and retain users.We plan to implement a secure private chat .Tuiter's private chat
+feature is a wonderful way to collaborate and debate with other Tuiter users. There is currently no method to keep track
+of conversations as they occur. A private chat will be included in our implementation. On Tuiter, a user can send a direct
+message to any other active user. We have used socket. io to enable simultaneous sending/receiving of message for both the users involved in the chat.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Bookmarking a tuit is also very popular and helpful these days. A user can click on the bookmark button displayed in every tuit and bookmark the tuit.Upon bookmarking, the button changes colour from black to blue. A user can then see the bookmarked tuit in his/her bookmark screen. A tuit can also be unbookmarked.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Steps to install project
 
-### `npm test`
+ 1) Install backend on your local system from https://github.com/aditi-18/FSE-Team8-Node-TuitterBookmarks-Messaging. Follow steps in the readme to run backend setup.
+  2) Clone branch "socket" in a separate folder from the current repository. Run npm install --> npm start to configure socket.
+ 3) clone main branch to run frontend of our project.
+ 4) Run npm install to install all dependencies.
+ 5) Run npm run build  to build.
+ 6) Run npm start to start the react project.
+ 7) Open http://localhost:3000 to view project in your browser.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Steps to run  test
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1) Navigate to src/test directory and run npm run test 'file name' to run tests for added features.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## TeamMembers
+1) Foram Kavathiya
+2) Krina Dankhara
+3) Aditi Shrivastava
+4) Janvi Dankhara
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
