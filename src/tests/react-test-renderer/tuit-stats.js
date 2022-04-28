@@ -1,4 +1,3 @@
-/* eslint-disable eqeqeq */
 import React from "react";
 
 const TuitStats = ({tuit, dislikeTuit, likeTuit, bookmarkTuit = () => {}}) => {
