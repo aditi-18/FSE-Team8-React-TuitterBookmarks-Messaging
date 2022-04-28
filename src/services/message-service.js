@@ -4,7 +4,7 @@ import axios from "axios";
 const BASE_URL = "http://localhost:4000";
 const USERS_API = `${BASE_URL}/api/users`;
 
-export const api = axios.create({
+const api = axios.create({
     withCredentials: true
   });
   
@@ -28,12 +28,4 @@ export const findConversationOfUser = (uid1) =>
         api.get(`${USERS_API}/conversation/${uid1}`)
 
 export const findMessageFromConversation = (conversationId) =>
-        api.get(`${USERS_API}/findMessages/${conversationId}`)
-
-export const deleteConversation = (conversationId) =>
-      api.delete(`${USERS_API}/deleteConversation/${conversationId}`)
-          .then(response => response.data);
-
-export const userDeletesAMessage = (uid1, conversationId) =>
-      api.delete(`${USERS_API}/${uid1}/deletemessage/${conversationId}`)
-          .then(response => response.data);
+        api.get(`${USERS_API}/findMessages/${conversationId}`)        
